@@ -77,7 +77,7 @@ public class Client {
                 } else {
                     try {
                         FileInputStream fileInputStream = new FileInputStream(fileToSend[0].getAbsolutePath());
-                        Socket socket = new Socket("localhost", 1234);
+                        Socket socket = new Socket("10.20.155.119", 1234);
 
                         DataOutputStream dataOutputStream = new DataOutputStream(socket.getOutputStream());
                         String fileName = fileToSend[0].getName(); 
